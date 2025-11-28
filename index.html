@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 10 – Framework Demo (Materialize)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+  >
+
+  <style>
+    body {
+      background: #e3f2fd;
+    }
+    nav {
+      box-shadow: none;
+    }
+    .page-title {
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .card {
+      border-radius: 10px;
+    }
+    .chip {
+      font-weight: 500;
+    }
+    footer {
+      margin-top: 3rem;
+      padding: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="blue darken-3">
+    <div class="nav-wrapper container">
+      <a href="#!" class="brand-logo">Lab 10 – My experience with Materialize CSS</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="section">
+      <h4 class="page-title">Materialize CSS Framework Page</h4>
+      <p>
+        This page was created for Lab 10 to experiment with a web development framework.
+        I chose <strong>Materialize CSS</strong>, a front-end library based on Google’s Material Design.
+      </p>
+    </div>
+
+    <div class="row">
+
+      <div class="col s12 m6">
+        <div class="card white">
+          <div class="card-content">
+            <span class="card-title">How I Installed Materialize</span>
+            <p>
+              I used the CDN version of Materialize so I did not have to install anything locally:
+            </p>
+            <ul class="browser-default">
+              <li>Went to the Materialize website and opened the “Getting Started” section.</li>
+              <li>Copied the CSS CDN link into the <code>&lt;head&gt;</code> of this page.</li>
+              <li>Copied the JavaScript CDN link before the closing <code>&lt;/body&gt;</code> tag.</li>
+              <li>Saved the file as a normal <code>.html</code> page and opened it in my browser to test.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col s12 m6">
+        <div class="card white">
+          <div class="card-content">
+            <span class="card-title">How I Built This Page</span>
+            <p>
+              After connecting Materialize, I used some of its basic components:
+            </p>
+            <ul class="browser-default">
+              <li>A <strong>navbar</strong> at the top using the <code>nav</code> and <code>nav-wrapper</code> classes.</li>
+              <li>A simple <strong>grid layout</strong> with the <code>row</code> and <code>col s12 m6</code> classes.</li>
+              <li><strong>Cards</strong> to separate each section of the explanation.</li>
+              <li><strong>Chips</strong> at the bottom to highlight the tools used.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s12">
+        <div class="card white">
+          <div class="card-content">
+            <span class="card-title">Difficulties and How I Solved Them</span>
+            <p>
+              At first, I struggled a bit with the grid system and the way Materialize names its classes.
+              I am more used to plain CSS, so remembering to wrap content inside a
+              <code>row</code> and use <code>col s12 m6</code> for columns took a few tries.
+            </p>
+            <p>
+              I also had to test a few different colour combinations to make sure the text stayed readable
+              on the blue background. Opening the browser’s developer tools helped me quickly tweak the
+              styles until everything looked balanced.
+            </p>
+            <p>
+              Finally, I tested the page on a smaller window to confirm that the layout was responsive.
+              Materialize handled most of that automatically as long as I followed the grid structure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s12">
+        <div class="card white">
+          <div class="card-content">
+            <span class="card-title">Tools Used</span>
+            <div class="chip blue lighten-4 blue-text text-darken-4">Materialize CSS</div>
+            <div class="chip blue lighten-4 blue-text text-darken-4">HTML5</div>
+            <div class="chip blue lighten-4 blue-text text-darken-4">Simple inline CSS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="blue darken-3 white-text">
+    <div class="container center-align">
+      &copy; 2025 Zahra – Lab 10 Framework Demo
+    </div>
+  </footer>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+  </script>
+</body>
+</html>
